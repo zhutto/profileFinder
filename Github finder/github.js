@@ -1,8 +1,8 @@
-class Gitub {
+class Github {
   constructor() {
     this.repos_count = 5;
     this.repos_sort = 'created: asc';
-// key for github if using more than 100 requests per hour
+      // need key for github if using more than 100 requests per hour
   }
   async getUser(user) {
     const profileResponse = await fetch(`https://api.github.com/users/${user}`);
@@ -12,9 +12,9 @@ class Gitub {
     const profile = await profileResponse.json();
     const repos = await repoResponse.json();
 
-    return {
-      profile
-      repos
-    }
-  }
-}
+     return {
+       profile,
+       repos
+     }
+   }
+ }

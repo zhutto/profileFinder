@@ -25,12 +25,12 @@ class UI {
         </div>
       </div>
     </div>
-    <h3 class ="page-heading mb-3">Latest Projects</h3>
-    <div id="repos"></div>
-    `;
+  `;
   }
-// show user Repositories
-showRepos(repos) {
+
+// show user Repositories in progress
+/*  showRepos(repos) {
+
   let output = '';
   repos.forEach(function(repo){
     output += `
@@ -45,11 +45,13 @@ showRepos(repos) {
         <span class ="badge badge-primary">Forks: ${user.forks_count}</span>
         </div>
       </div>
-    </div>`;
+    </div>
+  `;
 
   });
+  document.getElementByI('repos').innerHTML
 }
-
+*/
 
 // show alert if no user found
 
